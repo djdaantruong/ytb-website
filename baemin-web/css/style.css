@@ -1,0 +1,121 @@
+:root {
+  /* color */
+  --primary-color: #75d5d8;
+  --bgr-color: #f5f7fa;
+  --btn-color: #f38e39;
+  --heading-color: #141619;
+
+  /* font */
+  --heading-font: 'Bebas Neue', cursive;
+  --main-font: 'Roboto', sans-serif;
+}
+
+* {
+  font-family: var(--main-font);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  background-color: var(--bgr-color);
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar Start */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  background-color: transparent;
+  transition: 0.4s ease-in-out;
+}
+
+.navbar .container {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar .menu-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navbar .menu-wrap .menu {
+  margin: 0 auto;
+}
+
+.navbar .logo {
+  font-family: var(--heading-font);
+  font-weight: 800;
+  font-size: 36px;
+  letter-spacing: 2px;
+  color: var(--primary-color);
+}
+
+.navbar .menu a {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  font-family: var(--main-font);
+  color: #9ea0a3;
+  margin: 0 20px;
+}
+
+.navbar .menu a:hover {
+  color: var(--heading-color);
+}
+
+.navbar .menu a.active {
+  font-weight: 500;
+  color: var(--heading-color);
+} /* Navbar End */
+
+/* Section Start */
+.section .container {
+  padding: 8%;
+  height: 100vh;
+  position: relative;
+}
+
+.section-content {
+  flex: 1 1 auto;
+}
+
+.section-content .title {
+  font-size: 160px;
+  font-family: var(--heading-font);
+  line-height: 128px;
+  letter-spacing: 1.8px;
+  margin-left: -5px;
+}
+
+.section-visual {
+  position: absolute;
+  right: -106px;
+  bottom: 10vh;
+  padding-top: 50px;
+  max-width: 748px;
+  width: 100%;
+}
+
+.section-visual img {
+  width: 100%;
+}
+/* Section End */
