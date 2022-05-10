@@ -8,6 +8,13 @@ $(document).ready(() => {
   })
 })
 
+$(document).scroll(() => {
+  $('.navbar').toggleClass(
+    'active',
+    $(this).scrollTop() > $('.navbar').height()
+  )
+})
+
 var swiper = new Swiper('.mySwiperHome', {
   slidesPerView: 'auto',
   centeredSlides: true,
