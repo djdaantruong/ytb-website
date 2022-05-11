@@ -3,6 +3,7 @@
   --primary-color: #1e6f5c;
   --btn-color: #e6dd3b;
   --heading-color: #ece7b4;
+  --black-color: #2e2828;
 
   /* font */
   --heading-font: 'Montserrat', sans-serif;
@@ -370,6 +371,32 @@
 .product .row1 {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.product .row1 .label {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.product .row1 .heading {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--black-color);
+  margin-top: 15px;
+  max-width: 735px;
+}
+
+.product .row1 .btn-slider {
+  margin: 0 5px;
+  font-size: 50px;
+  color: var(--btn-color);
+}
+
+.product .row1 .btn-slider i {
+  cursor: pointer;
 }
 /* Product End */
 
