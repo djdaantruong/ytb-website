@@ -33,4 +33,28 @@ var swiper = new Swiper('.mySwiperProduct', {
     nextEl: '.bxs-chevron-right-circle',
     prevEl: '.bxs-chevron-left-circle',
   },
+  breakpoints: {
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    375: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+  },
+})
+
+var swiper = new Swiper('.mySwiperTesti', {
+  spaceBetween: 30,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  autoplay: {
+    delay: 3000,
+  },
 })
